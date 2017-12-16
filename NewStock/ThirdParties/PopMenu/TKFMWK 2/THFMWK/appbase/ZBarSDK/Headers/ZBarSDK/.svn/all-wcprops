@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK
+END
+ZBarHelpController.h
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarHelpController.h
+END
+ZBarImageScanner.h
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarImageScanner.h
+END
+ZBarReaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarReaderView.h
+END
+zbar.h
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/zbar.h
+END
+ZBarReaderViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarReaderViewController.h
+END
+ZBarSDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarSDK.h
+END
+ZBarImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarImage.h
+END
+ZBarSymbol.h
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarSymbol.h
+END
+ZBarCaptureReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarCaptureReader.h
+END
+ZBarReaderController.h
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarReaderController.h
+END
+ZBarCameraSimulator.h
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/ZBarSDK/Headers/ZBarSDK/ZBarCameraSimulator.h
+END

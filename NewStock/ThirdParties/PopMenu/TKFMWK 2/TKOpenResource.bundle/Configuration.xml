@@ -1,0 +1,100 @@
+<!--APP应用系统配置-->
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	
+    <catalog name="system" description="系统配置">
+        <item name="isLinstenGateway" value="0" description="是否对BusConfig.xml的服务器进行启动检测" />
+        <item name="isHqPush" value="0" description="是否开启行情推送通道服务" />
+        <item name="pluginPath" value="SystemPlugin.xml|OpenPlugin.xml" description="系统插件配置文件地址,多个用|分割" />
+        <item name="theme" value="theme1" description="默认主题名称" />
+        <item name="keyborad" value="0" description="原生键盘主题类型(0:浅色,1:深色,2:招商)" />
+        <item name="isShowNetChange" value="1" description="是否显示网络连接提醒(0:否,1:是)" />
+        <item name="showNetChangeMode" value="1" description="显示网络连接提醒的模式(0:底部提示,1:通知栏提示)" />
+        <item name="isDevelop" value="0" description="是否开发环境(0:否,1:是)" />
+        <item name="listenTouch" value="0" description="是否监听全局屏幕触发(0:否,1:是)" />
+        <item name="isCheckUpdate" value="1" description="是否启动检测版本更新(0:否,1:是)" />
+        <item name="htmlLoadMode" value="0" description="html的加载模式(0:从安全沙箱加载,1:从安装包加载)，默认是0" />
+        <item name="isBlurBackground" value="1" description="是否在切换到后台时候模糊背景(0:否,1:是)" />
+        <item name="isShowFMWKVersion" value="1" description="是否长按显示框架版本号(0:否,1:是)默认是1" />
+        
+        <item name="isUseURLCache" value="0" description="是否启动所有URL请求资源的缓存机制(0:否,1:是)默认是0" />
+        <item name="isRequestURLEncode" value="0" description="是否对请求入参进行URL编码(0:否,1:是)默认是1" />
+        <item name="isRequestURLSign" value="0" description="是否对请求入参进行签名(0:否,1:是)默认是0" />
+        <item name="requestSignKey" value="nPeaYkREFgwhlz6/UN582NYDd3ySKKTSM4jTiMrZtmYeT9CVhloh0e0kmq2PagBU" description="请求签名的Key" />
+        <item name="requestSignAppId" value="00000001" description="请求签名的APPId" />
+        <item name="isRequestURLEncrypt" value="0" description="是否对请求入参进行加密(0:否,1:是)默认是0" />
+        <item name="requestEncryptMode" value="des" description="加密的类型" />
+        <!--
+        <item name="requestEncryptKey" value="nPeaYkREFgwhlz6/UN582B5P0JWGWiHR7SSarY9qAFQ=" description="请求加密的Key" />
+         -->
+    </catalog>
+    
+    <catalog name="log" description="日志的配置">
+        <item name="logLevel" value="info" description="off|error|warn|info|debug|all" />
+        <item name="logAsync" value="1" description="是否异步写日志(0:同步，1:异步)" />
+        <item name="logType" value="console" description="console:控制台，file:文件，server:服务器，多种日志模式用|分割，如console|file|server" />
+        <item name="fileLogRollingFrequency" value="1440" description="文件日志滚动的时间间隔，单位分钟，超过就新建文件" />
+        <item name="fileLogRollingSize" value="1" description="文件日志滚动的文件大小间隔，单位M，超过就新建文件" />
+        <item name="fileLogMaxNum" value="7" description="文件日志的最大个数，超过就删除历史文件" />
+        <item name="fileLogMaxSize" value="20" description="文件日志的存储空间限制，单位M，超过就删除历史文件" />
+        <item name="serverLogSaveInterval" value="60" description="服务器日志的发送时间间隔，单位秒" />
+        <item name="serverLogSaveThreshold" value="100" description="服务器日志的发送累计条数间隔" />
+    </catalog>
+    
+    <catalog name="ssl" description="ssl证书配置">
+        <item name="zh.sczq.com.cn" value="1|app.sczq.com.cn.cer" description="格式为：是否校验证书(0:不校验,1:校验)|证书地址|证书密码" />
+        <item name="www.baidu.com" value="1|app.sczq.com.cn.cer" description="格式为：是否校验证书(0:不校验,1:校验)|证书地址|证书密码" />
+    </catalog>
+    
+    <catalog name="webViewPool" description="webView链接池">
+        <item name="isUse" value="0" description="是否开启(0:否,1:是)" />
+        <item name="poolInitSize" value="3" description="池子初始大小" />
+        <item name="poolMaxSize" value="5" description="池子最多大小" />
+    </catalog>
+    
+    <catalog name="noteBar" description="通知栏提示层配置">
+        <item name="barColor" value="" description="背景色" />
+        <item name="textColor" value="" description="字体颜色" />
+    </catalog>
+    
+    <catalog name="umeng" description="友盟统计配置">
+        <item name="isOpen" value="0" description="是否开启(0:否,1:是)" />
+        <item name="appKey" value="56cec27de0f55abb4b001d59" description="授权Key" />
+        <item name="policy" value="0" description="发送策略(0:实时发送-只在测试模式下有效,1:启动发送,4:每日发送,5:仅在WIFI下时启动发送,6:最小间隔发送,7:进入后台时发送)" />
+        <item name="channelId" value="appStore" description="发送渠道" />
+        <item name="isShowLog" value="1" description="设置是否打印sdk的log信息(0:否,1:是)" />
+        <item name="isEncrypt" value="0" description="设置是否对日志信息进行加密(0:否,1:是)" />
+    </catalog>
+    
+    <catalog name="update" description="版本管理配置">
+        <item name="mode" value="1" description="更新模式0:全量更新,1:增量更新" />
+        <item name="saveName" value="www.zip" description="下载H5压缩包名称" />
+        <item name="password" value="" description="解压H5压缩包得密码" />
+        <item name="isEncrypt" value="0" description="H5下载压缩包是有密码(0:否,1:是,2:是加密，同时配置的password字段是加密后的密码)" />
+        <item name="updateTip" value="" description="更新过程提示语" />
+        <item name="errorTip" value="" description="更新错误提示语" />
+        <item name="successTip" value="" description="更新成功提示语" />
+        <item name="isShowUpdateTip" value="1" description="是否显示更新相关弹层进度提示" />
+        <item name="isReloadWebView" value="1" description="是否更新完成后进行webview的刷新动作" />
+    </catalog>
+    
+    <catalog name="theme" description="主题配置">
+        <item name="theme1" value="userLogin.css|theme.css|theme1.css" description="主题1样式文件地址" />
+        <item name="theme2" value="userLogin.css|theme.css|theme2.css" description="主题2样式文件地址" />
+    </catalog>
+    
+    <catalog name="newworkErrorInfo" description="Http请求常见的错误的提示信息配置">
+        <item name="-100000" value="亲，网络很不给力哦~" description="请求断网错误" />
+        <item name="-100001" value="亲，服务器不能正常访问~" description="请求服务器异常" />
+        <item name="-100002" value="亲，请求超时，请稍后重试~" description="请求超时错误" />
+        <item name="-100003" value="亲，请求已中断，请稍后重试~" description="请求中断错误" />
+        <item name="-100004" value="亲，请求地址不能正常访问~" description="请求地址错误" />
+    </catalog>
+    
+    <catalog name="CPAuth" description="银联认证相关配置">
+        <item name="environment" value="test" description="运行环境(生产环境:product,测试环境:test)" />
+        <item name="appSysId" value="90000" description="系统编号" />
+        <item name="privateKey" value="88888888" description="密钥" />
+    </catalog>
+    
+</system>
