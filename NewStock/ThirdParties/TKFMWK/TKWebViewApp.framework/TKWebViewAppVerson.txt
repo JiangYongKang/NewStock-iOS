@@ -1,0 +1,338 @@
+1.V1.0.0初始化版本
+2.V1.0.1
+  1.解决webview中a标签的BUG
+  2.增加视频播放的插件
+  3.增加获取设备软件信息的插件，插件配置文件跟着进行了修改
+  4.支持测速的配置文件的修改
+  5.扩展自定义键盘类型，新增顺序加强版键盘类型
+  6.修改TKBaseWebViewController，扩展属性isH5LoadFinish，代表H5是否加载完成，增加方法h5LoadFinish
+    webView加载完成后自动触发。
+  7.优化自定义键盘和系统键盘的混合应用
+  8.修改视频播放控件在8.0系统的旋转bug
+  9.解决URL编码中#号的问题。
+  10.增加打开原生webview的插件
+  11.增加关闭原生模块的插件
+  12.修改调用插件的协议
+  13.优化打开原生webbiew插件
+  14.解决调用插件跨域BUG
+3.V1.0.2
+  1.解决了打开pdf插件中webview不能自动缩放的问题
+  2.增加了自定义的TKTabBarViewController的切换代理触发，目前触发的方法是
+    -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController;
+  3.优化数字自定义键盘
+  4.完善分割栏样式，支持圆角设置
+  5.优化app启动的流程，异步加载H5到安全沙箱document里面
+  6.优化自定义键盘，修复自定义键盘的bug
+  7.修复TKAppEngine关于模块跳转的bug
+  8.自定义webview的UserAgent
+  9.修复TKTabBarViewController的代理执行bug
+  10.修复TKBaseWebViewController关于界面显示带参数的问题
+4.V1.0.3
+  1.修复TKWebViewHelper获取webview的加载路径的bug
+  2.修复基础插件中currentViewCtrl的bug
+  3.修复修复TKAppEngine关于模块跳转中弹出界面的bug
+  4.扩展网络站点测速模块
+  5.修改状态栏的颜色，支持图片(导航栏和webview)
+  6.滑动翻页控制器TKGesturePagerController的优化。
+  7.修复下载组件的功能
+  8.扩展导航图组件
+  10.解决键盘每次弹出需要随机的问题
+  11.解决滑动返回的BUG
+  12.扩展TKTabBarViewController添加TKTabBarViewControllerDelegate代理
+  13.优化TKBaseViewController监听通知的逻辑
+5.V1.0.4
+  1.完善通信底层包，支持行情等长连接机制
+  2.完善TKBaseWebViewController，支持修改控制器的名称的时候，同时修改webview的名称
+  3.完善TKBaseWebViewController，根据tabbar自动改变高度自适应
+  4.修复通信包关于行情V3协议的bug，新增期货推送管理类TKQHQuotePushManager，用法和TKQuotePushManager类似，注意发出的通知名称略有不同.
+  5.修改TKAppEngine,默认不展示网通提示，只有网络发生改变才展示。
+  6.增加应用切换到后台的毛玻璃效果
+  7.修复请求流水号的类型为int（原来是uint）
+  8.增加上传图片支持进度的代理
+  9.完善滑动翻页组件，支持tab标签的css设置。
+  10.增加滚动选择器组件
+  11.TKThemeManager增加取CSS配置文件里面属性值得方法
+      -(NICSSRuleset *)getCssRulesetByCssKey:(NSString *)cssKey;
+6.V1.0.5
+  1.完善行情的长短连接模式
+  2.优化滑动返回组件TKGestureNavigationController
+  3.优化文件查找的方法
+  4.修改对字符串trim格式
+  5.修改基础插件关于json格式入参的定义，兼容json字符串格式和json对象格式。
+  6.修复TKNumberHelper的bug
+  7.修复长连接断线重连机制
+  8.解决滚动选择器组件的bug
+  9.增加滚动广告组件TKBannerView
+  10.修改Configration.xml,增加配置项
+     <item name="isBlurBackground" value="1" description="是否在切换到后台时候模糊背景(0:否,1:是)" />
+  11.TKTabBarViewController增加设置角标的方法，值为空就消失
+     - (void) setItemBadge:(NSString *)badge forIndex:(NSInteger )index;
+  12.增加自动识别二维码图片插件（一般用于长按图片触发）
+  13.集成UINavigationController+FDFullscreenPopGesture，实现仿照系统的丝滑滑动返回
+7.V1.0.6
+  1.修复TKBaseViewController的内存警告bug
+  2.修复TKLayerView的计算高度的BUG
+  3.增加网络提示的类型，支持通知栏显示和下部tip显示两种模式
+  <item name="showNetChangeMode" value="0" description="显示网络连接提醒的模式(0:底部提示,1:通知栏提示)" />
+  4.修复日期选择组件关于宽度自适应的BUG
+  5.完善读取配置文件的值问题，兼容使用者不小心中间加入空格
+  6.发现集成UINavigationController+FDFullscreenPopGesture在源代码开发界面的使用场景中，针对隐藏导航栏然后在push子控制器这种场景，不太适用，会有导航栏延迟隐藏的问题，目前可以暂时使用在不隐藏导航栏的业务场景上。TKGesturePagerController尚未发现以上问题，但性能目前还有优化空间。
+  7.对日期控件TKDatePicker和TKDataPicker控件增加样式支持
+    TKDatePicker{
+       -ios-bar-title-color:#FFFFFF;  //按钮文字颜色
+       -ios-bar-tint-color:#FFFFFF;   //按钮背景颜色
+       background-color:#FFFFFF; //控件背景颜色
+    }
+    TKDataPicker{
+       -ios-bar-title-color:#FFFFFF;  //按钮文字颜色
+       -ios-bar-tint-color:#FFFFFF;   //按钮背景颜色
+       background-color:#FFFFFF; //控件背景颜色
+       color:#FFFFFF; //控件文字颜色
+    }
+  8.扩展完善TKBaseWebViewController,增强支持页面的跳转
+    /**
+     *
+     *  是否需要进行模块初始化检测的备用条件,这个和isUseSSO配合使用,在isUseSSO是Yes，并且isNeedReInitJSModule也是Yes的情况下，才会主动调用一次js的50113功能号，进行模块初始化检测,默认是YES
+     */
+    @property(nonatomic,assign)BOOL isNeedReInitJSModule;
+  9.修复50115插件的BUG
+  10.支持H5目录的修改，saveName代表H5的目录，可以修改，单必须和包里面的H5路径保存一直。
+     <catalog name="update" description="版本管理配置">
+        <item name="saveName" value="www.zip" description="下载H5压缩包名称" />
+  11.修复自定义键盘，兼容ios9
+  12.修复Get请求传参bug
+8.V1.0.7
+  1.增加webview缓存池,进行webview的缓存优化
+    <catalog name="webViewPool" description="webView链接池">
+       <item name="isUse" value="是否启用" description="是否开启(0:否,1:是)" />
+       <item name="poolInitSize" value="3" description="池子初始大小" />
+       <item name="poolMaxSize" value="5" description="池子最多大小" />
+    </catalog>
+  2.修改50201接口，增加入参tip，代表下载更新提示语。
+  3.RequestVo增加设置请求超时时间的属性，默认30秒
+     @property(nonatomic,assign)NSInteger timeOut;
+  4.下拉刷新组件增加自动刷新的方法。- (void)autoPullDown;
+     执行完成后通过 (void)stopLoadWithState:(LoadState)state;方法结束
+  5.状态通知栏支持颜色换肤功能。
+    .JDStatusBarStyle{
+       background-color:#00FF00; //背景色
+       color:#FFFFFF; //文字颜色
+    }
+  6.集成了MJRefresh组件，实现滑动刷新，这个为新组件，滑动刷新的另一种实现，具体用法可以百度查看，比较简单。
+  7.修改了50240打开pdf的插件，支持word，ppt等其他的附件格式。
+  8.修复webview缓存池的BUG
+  9.修复二维码扫描组件在iPhone6上的样式问题。
+  10.修复TKAppEngine模块跳转的BUG
+  11.ReqParamVo对象增加缓存相关的设置，我们的服务器请求支持前端的缓存，可以进行内存或者本地文件的缓存，另外可以设置缓存的时间，单位秒
+     /**
+      *  缓存时间，单位是秒
+      */
+     @property(nonatomic,assign)NSInteger cacheTime;
+     /**
+      *  缓存类型
+      */
+     @property(nonatomic,assign)CacheType cacheType;
+     /**
+      *  是否缓存
+      */
+     @property(nonatomic,assign)BOOL isCache;
+   12.增加TKCacheManager的缓存管理器对象，里面进行缓存对象的管理，支持设置缓存对象的时间，支持内存缓存，文件缓存和数据库缓存等，以后不建议用TKCacheHelper和TKSystemHelper里面关于操作文件缓存和内存的缓存方法，原来的方法不支持设置缓存时间。新增的这个对象可以统一管理所有类型的缓存。内核基于TKCacheHelper和TKSystemHelper的缓存方法做了扩展支持。
+   13.修复广告栏组件滚动卡顿的BUG
+   14.修复webview缓存的jscallback对象的获取bug
+   15.TKGesturePagerDelegate代理对象增加重新计算各个TabItemWidth的代理方法，可以实现滑动翻页组件tabitem的宽度不一样的效果。
+     /**
+      *
+      *  重新计算各个TabItemWidth
+      *
+      *  @param viewPager 翻页组件
+      *  @param index 索引
+      *
+      *  @return
+      */
+      - (CGFloat)viewPagerTabItemWidth:(TKGesturePagerController *)viewPager forIndex:(NSInteger)index;
+    16.解决键盘组件空格的处理问题
+    17.扩展ReqParamVo对象，支持自定义的通信dao
+      /**
+       *  自定义通信dao名称
+       */
+     @property(nonatomic,copy)NSString* daoName;
+    18.增加更新下载相关提示语配置
+       <catalog name="update" description="版本管理配置">
+          <item name="isReboot" value="0" description="版本更新后是否关闭应用(0:否,1:是)" />
+          <item name="version" value="V1.1.1" description="版本名称" />
+          <item name="versionSn" value="0" description="版本内部序号" />
+          <item name="saveName" value="www.zip" description="下载H5压缩包名称" />
+          <item name="password" value="123" description="解压H5压缩包得密码" />
+          <item name="isEncrypt" value="0" description="H5下载压缩包是有密码(0:否,1:是)" />
+          <item name="checkUrl" value="http://61.178.81.134:443/servlet/trade/json?funcNo=901916&channel=2&soft_no=com.thinkive.investHljj&versionsn=8" description="版本自动检测的服务器地址" />
+          <item name="updateTip" value="" description="更新过程提示语" />
+          <item name="errorTip" value="" description="更新错误提示语" />
+          <item name="successTip" value="" description="更新成功提示语" />
+        </catalog>
+    19.解决H5下载完成后，不自动刷新的BUG
+    20.优化完善手势密码插件
+    21.TKTabBarViewController增加属性isHiddenSegLine用来控制是否隐藏顶部分割线
+9.V1.0.8
+    1.修复视频播放组件的BUG
+    2.控制基础控制器的屏幕旋转，基础控制器目前都禁止了屏幕旋转功能。
+    3.扩展TKBaseWebViewController，支持在导航栏控制器下面的自动布局
+    4.扩展插件50261，支持验证手势密码默认不显示的功能
+    5.扩展TKCommonService,支持IOS调用JS的批量群调用
+    6.修复选择通讯录组件的兼容性BUG
+
+10.V2.0.0
+    1.初始化版本
+    2.ZipArchive.mm,TBXML+*.m,Async*.m,SimplePing.m,ASI*.m,OpenUDID.m,KeychainItemWrapper.m
+    上述相关文件为非ARC模式，需要在编译属性上面添加-fno-objc-arc的标示
+    3.扩展TKBaseWebViewController支持title显示在导航栏头，并支持返回
+    4.扩展TKAppEngine方法里面的页面跳转逻辑，支持在弹出层上继续弹层，原来是先关掉自己的弹出层，再弹出别的控制器。
+    5.修复启动引导图组件分页的标示BUG
+    6.修复选择通讯录组件的兼容性BUG
+    7.优化滑动翻页效果
+    8.优化缓存命中逻辑
+    9.修复TKBaseWebViewController初始化调用50113的BUG
+    10.增加H5增量更新的支持标志，采用增量更新模式兼容原来的全量更新，但是用增量更新模式执行全量的话，效率稍微低下，后续服务器全部升级为增量更新模式，就不会有啥问题了
+       <catalog name="update" description="版本管理配置">
+           <item name="mode" value="0" description="更新模式0:全量更新,1:增量更新" />
+    11.增加网络缓存命中的ResultVo的属性标志
+       /**
+        *  @Author 刘宝, 2016-12-31 10:12:26
+        *
+        *  是否缓存命中的数据
+        */
+       @property (nonatomic,assign)BOOL isCacheData;
+    12.优化行情长连接逻辑
+    13.增加请求头Accept-Encoding配置gzip,deflate,sdch
+    14.增加配置项
+       <catalog name="system" description="系统配置">
+         <item name="isShowFMWKVersion" value="1" description="是否长按显示框架版本号(0:否,1:是)默认是1" />
+    15.增加配置项
+       <catalog name="system" description="系统配置">
+          <item name="isRequestURLEncode" value="1" description="是否对请求入参进行URL编码(0:否,1:是)默认是1" />
+    16.增加插件50118代理发送http/https相关的网络请求
+    17.修复手势密码显示返回图片的问题
+    18.修复TKBaseWebViewController里面对50114插件中NOTE_CLOSE_MODULE关闭通知的处理BUG
+       注意：我们TKBaseWebViewController里面已经加了对NOTE_CLOSE_MODULE的监听，子类不需要重复添加了，原生TKBaseViewController这个控制器是没有监听实现的，子类要自己扩展监听。
+    19.解决了提示框，菊花，tip等被键盘遮挡的问题
+    20.加了判断解决ASI在ios9.3系统有些证书不能发送HTTPS请求的问题
+    21.修改了升级覆盖安装引起的主题没有修改的逻辑
+    22.增加了请求签名加密相关配置
+       <catalog name="system" description="系统配置">
+            <item name="isRequestURLSign" value="0" description="是否对请求入参进行签名(0:否,1:是)默认是0" />
+            <item name="requestSignKey" value="nPeaYkREFgwhlz6/UN582NYDd3ySKKTSM4jTiMrZtmYeT9CVhloh0e0kmq2PagBU" description="请求签名的Key" />
+            <item name="requestSignAppId" value="00000001" description="请求签名的APPId" />
+            <item name="isRequestURLEncrypt" value="0" description="是否对请求入参进行加密(0:否,1:是)默认是0" />
+            <item name="requestEncryptMode" value="des" description="加密的类型" />
+    23.修改了获取IP卡UI的逻辑
+    24.修改了测试站点的策略
+        <servers speedUrl="/speed.jsp" updateUrl="">
+           speedUrl为测试的具体地址，updateUrl是更新配置的地址
+    25.增加了招商的键盘样式
+    26.修复了测速站点的逻辑漏洞，导致一个站点的时候耗时一秒
+    27.集成了日志系统
+    28.增加了行情站点测速的功能配置，updateUrl
+    29.升级为AFNetworking替换ASIHttpRequest，修改更新下载还有上传相关代码
+    30.增加了https的本地证书校验
+      <catalog name="ssl" description="ssl证书配置">
+          <item name="zh.sczq.com.cn" value="1|app.sczq.com.cn.cer" description="格式为：是否校验证书(0:不校验,1:校验)|证书地址|证书密码" />
+          <item name="59.37.11.117" value="0" description="格式为：是否校验证书(0:不校验,1:校验)|证书地址|证书密码" />
+      </catalog>
+    31.增加更新的相关配置项目，删除冗余的配置项目
+      <catalog name="update" description="版本管理配置">
+         <item name="mode" value="1" description="更新模式0:全量更新,1:增量更新" />
+         <item name="saveName" value="www.zip" description="下载H5压缩包名称" />
+         <item name="password" value="" description="解压H5压缩包得密码" />
+         <item name="isEncrypt" value="0" description="H5下载压缩包是有密码(0:否,1:是,2:是加密，同时配置的password字段是加密后的密码)" />
+         <item name="checkUrl" value="https://59.37.11.117/mappuat/system/queryVersion?versionsn=1&channel=2&soft_no=com.logansoft.zcbao" description="版本自动检测的服务器地址" />
+         <item name="updateTip" value="" description="更新过程提示语" />
+         <item name="errorTip" value="" description="更新错误提示语" />
+         <item name="successTip" value="" description="更新成功提示语" />
+         <item name="isShowUpdateTip" value="1" description="是否显示更新相关弹层进度提示" />
+         <item name="isReloadWebView" value="1" description="是否更新完成后进行webview的刷新动作" />
+      </catalog>
+   32.解决弹层的一些插件，导致关闭弹层时候触发50113的接口问题，比如上传图片，扫描二维码等等。
+   33.增加滑动翻页组件支持设置分割标示的高度，和标示的位置等
+   34.解决行情未连接服务器的时候卡死的问题。
+   35.解决弹出框自适应和标题不换行的问题
+   36.系统存储支持加密存储模式
+   37.增加支持三方H5返回的功能
+   38.解决钥匙链存储导致崩溃的问题
+   39.TKBaseWebViewController 增加属性解决webView不需缓存的需求
+     /**
+      *  是否使用webView缓冲池机制。在系统开启缓冲池策略的时候，这个属性才有作用
+      */
+     @property(nonatomic,assign)BOOL isUseWebViewCachePool;
+   40.TKBaseWebViewController 增加属性解决webView识别图片二维码的需求
+     /**
+      *  是否支持图片识别
+      */
+     @property (nonatomic,assign)BOOL isSupportReadQRCodeImage;
+   41.解决弹层webview引起的电话号码问题
+   42.完善滑动翻页组件的滚动机制
+   43.集成思迪统计的SDK
+   44.解决招商键盘按下提示背景的bug
+   45.解决导航栏组件Navbar在ios10下面状态栏背景色不兼容的问题。
+   46.解决了三方包的问题，集成其他厂商用的我们原来的包，要上层自己引入，平台不再管理了
+   47.解决了数据库加密的问题，需要在编译配置里面加other c的选项为-DSQLITE_HAS_CODEC
+
+   2016-09-21:更新内容
+   48.支持多机房测速方案，要更新Server.xml和对应服务器
+   49.解决左右抽屉组件关闭的BUG，如果本身关闭，他原来的逻辑是自动打开的。
+   50.解决和第三方集成的时候NSNRLCache冲突的问题
+
+   2016-10-19:更新内容
+   1.解决行情服务器通信层因为并发异步读写缓存区导致的偶然崩溃的问题。
+   2.增加一创期货交易键盘
+   3.解决webview调用原生键盘插件导致返回时候崩溃的问题
+   4.扩展TKGesturePagerController滑动翻页类，增加属性tabsViewFrame可以设置滑动翻页组件顶部导航菜单的位置。
+
+   2016-10-28:更新内容
+   1.解决TKBaseWebViewContrller改变名字导致没有重新注册webview，从而引起不能回调h5的方法的BUG
+
+   2016-11-07:更新内容
+   1、修改50270,50271,50273接口，增加入参statusColor，实现修改状态栏，导航栏的颜色
+
+   2016-11-10:更新内容
+   1、解决TKBaseWebViewCtroller里面调用service.iosCallJs的方法导致控制器释放不了的BUG
+
+   2016-11-23:更新内容
+   1、优化了多机房测速的逻辑
+   2、完善网络通信包，支持天风新版协议，优化长连接的断线重连机制和心跳检测机制
+   3、增加获取通讯录的插件
+   4、替换友盟新版的库
+   5、增强代理网络请求插件的功能，支持新版本http协议和socket协议
+   6、解决网络通信层关于AFNetworking的部分逻辑缺陷处理。
+   7、解决滑动翻页组件的重新加载不释放顶部View的BUG
+
+   2016-11-29:更新内容
+   1.解决滑动翻页组件重新加载显示上次分割线的BUG
+   2.解决socket长连接关于包体长度为0时候不执行回调的BUG
+   3.解决数字键盘，股票键盘等自定义键盘键盘按下时候背景色发生改变引起的安全漏洞
+   4.扩展UITableView的nimbus的css支持
+   5.支持本地校验的ssl证书放到安全沙箱里面，方便进行证书的更新操作
+
+   2016-12-10：更新内容
+   1.解决Toast提示的阴影问题
+   2.解决隐藏Tabbar插件的BUG，原来的版本会导致H5预加载的时候影响其他模块的Tabbar的展示状态
+   3.修改行为统计的逻辑，app的使用周期为APP进入前台到APP切入后台直接的时间
+
+   2016-12-13：更新内容
+   1.解决网络通信层由于过度释放导致的偶然崩溃的问题
+
+   2016-12-27：更新内容
+   1.解决H5在线更新以后丢失参数的问题
+   2.解决Webview加载url地址对https的请求不拦截校验的安全问题
+   3.发送短信的接口支持传空的手机号和内容
+
+   2017-01-13：更新内容
+   1.优化招商版本的键盘
+   2.处理公司长连接超时的问题
+   3.增加模块间通信的消息引擎，增加Module.xml配置文件
+   4.增加图像验证码组件
+   5.修改Configuration.xml 增加配置项目，支持模块配置和放篡改配置
+     <item name="modulePath" value="Module.xml" description="系统模块配置文件地址,多个用|分割" />
+     <catalog name="h5Filter" description="H5资源的请求加载拦截配置">
+        <item name="isUseURLCache" value="0" description="是否启动所有URL请求资源的缓存机制(0:否,1:是)默认是0" />
+        <item name="urlFilterEncryptKey" value="miNjYDthPMOsKnXWNaWBvpojY2A7YTzDrCp11jWlgb4eT9CVhloh0e0kmq2PagBU" description="URL请求资源放篡改的加密Key" />
+      </catalog>
+   6.增加对统计SDK的插件调用

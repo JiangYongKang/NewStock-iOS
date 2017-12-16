@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math
+END
+bitstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/bitstream.h
+END
+rscode.c
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/rscode.c
+END
+mask.h
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/mask.h
+END
+qrencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrencode.c
+END
+split.h
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/split.h
+END
+qrinput.c
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrinput.c
+END
+qrspec.h
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrspec.h
+END
+rscode.h
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/rscode.h
+END
+qrencode.h
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrencode.h
+END
+qrinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrinput.h
+END
+bitstream.c
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/bitstream.c
+END
+mask.c
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/mask.c
+END
+split.c
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/split.c
+END
+qrspec.c
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/component/qrcoder/math/qrspec.c
+END

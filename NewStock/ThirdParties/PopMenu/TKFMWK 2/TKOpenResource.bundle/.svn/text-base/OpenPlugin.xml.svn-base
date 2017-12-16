@@ -1,0 +1,20 @@
+<!--H5调用原生基础公共插件-->
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+  <item name='60000' value="TKOpenPlugin60000" description="判断影像文件是否存在"></item>
+  <item name='60001' value="TKOpenPlugin60001" description="数据签名"></item>
+  <item name='60002' value="TKOpenPlugin60002" description="影像采集"></item>
+  <item name='60003' value="TKOpenPlugin60003" description="创建公私钥"></item>
+  <item name='60004' value="TKOpenPlugin60004" description="安装证书"></item>
+  <item name='60005' value="TKOpenPlugin60005" description="AnyChat双向视频"></item>
+  <item name='60006' value="TKOpenPlugin60006" description="单向视频"></item>
+  <item name='60007' value="TKOpenPlugin60007" description="活体识别"></item>
+  <item name='60008' value="TKOpenPlugin60008" description="人脸识别"></item>
+  <item name='60010' value="TKOpenPlugin60010" description="GPS定位获取经纬度"></item>
+  <item name='60011' value="TKOpenPlugin60011" description="拨号视频"></item>
+  <item name='60013' value="TKOpenPlugin60013" description="拍摄证件照（新）"></item>
+  <item name='60014' value="TKOpenPlugin60014" description="证件照客户端OCR识别"></item>
+  <item name='60015' value="TKOpenPlugin60015" description="定位获取营业部（地图显示营业部）"></item>
+  <item name='60016' value="TKOpenPlugin60016" description="银行卡识别"></item>
+  <item name='60020' value="TKOpenPlugin60020" description="东莞个性化插件"></item>
+</plugins>

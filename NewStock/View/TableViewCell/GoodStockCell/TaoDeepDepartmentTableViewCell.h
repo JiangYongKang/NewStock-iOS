@@ -1,0 +1,16 @@
+//
+//  TaoDeepDepartmentTableViewCell.h
+//  NewStock
+//
+//  Created by 王迪 on 2017/6/27.
+//  Copyright © 2017年 Willey. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface TaoDeepDepartmentTableViewCell : UITableViewCell
+
+
+- (void)setN:(NSString *)n count:(NSString *)count sale:(NSString *)sale buy:(NSString *)buy ;
+
+@end

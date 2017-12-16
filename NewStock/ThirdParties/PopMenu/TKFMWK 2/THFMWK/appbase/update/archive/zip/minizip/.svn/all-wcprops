@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip
+END
+ioapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/ioapi.c
+END
+zip.c
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/zip.c
+END
+unzip.c
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/unzip.c
+END
+crypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/crypt.h
+END
+ioapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/ioapi.h
+END
+mztools.c
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/mztools.c
+END
+zip.h
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/zip.h
+END
+unzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/unzip.h
+END
+mztools.h
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/jiabei/!svn/ver/4085/trunk/04-%E5%BC%80%E5%8F%91/02-%E4%BB%A3%E7%A0%81/trunk/%E5%89%8D%E7%AB%AF/iOS/NewStock/NewStock/ThirdParties/PopMenu/TKFMWK%202/THFMWK/appbase/update/archive/zip/minizip/mztools.h
+END
